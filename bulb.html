@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #btn{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="bulboff.jpg" alt="" id="image"><br>
+
+    
+    <script>
+      
+     function bulbOn(){
+       const x = document.getElementById("image");
+       if(x.src.match("bulbon.jpg")){
+        x.src = "bulboff.jpg";
+        document.getElementById("btn").innerHTML = "On"
+       } else{
+        x.src = "bulbon.jpg"
+        document.getElementById("btn").innerHTML = "Off"
+       }
+
+
+     }
+    </script>
+<button id="btn" onclick="bulbOn()">Give me click</button>
+
+</body>
+</html>
